@@ -41,7 +41,7 @@ section{
 }
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));/* auto respnsive with-out media query*/
+   grid-template-columns: repeat(auto-fit,minmax(180px,1fr));/*  auto respnsive with-out media query*/
     gap: 15px;
 }
 .project-card{
