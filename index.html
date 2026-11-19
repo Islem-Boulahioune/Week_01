@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Islem's personal portfolio">
+    <link rel="stylesheet" href="style.css">
     <title>My First Website</title>
 </head>
 
 <body>
     <header>
-        <h1>Hello It's ISLEM HERE</h1>
+        <h1 class="maintitle">Hello it's ISLEM HERE</h1>
         <p>
             My name is islem I am a cs student at university
             of Jijel ,I'm learning web development and building
@@ -19,25 +20,43 @@
     </header>
 
     <main>
-        <section>
-            <h2>My skills</h2>
-            <ul>
+        <section class="skills">
+            <h2 class="title">My skills</h2>
+            <ul class="skills-container">
                 <li>Html</li>
                 <li>Css</li>
                 <li>JavaScript</li>
                 <li>Python</li>
                 <li>C</li>
             </ul>
+
         </section>
         <section>
-            <h2>Find Me</h2>
-            <a href="http://github.com/Islem-Boulahioune">
+            <h2>My Projects</h2>
+            <div class="project_grid">
+                <div class="project_card">
+                    <h3>Portfolio</h3>
+                    <p>my personal website</p>
+                </div>
+                <div class="project-card">
+                    <h3>Calculator</h3>
+                    <p>A simple calculator</p>
+                </div>
+                <div class="project-card">
+                    <h3>To do List</h3>
+                    <p>A task manager app</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="title">Find Me</h2>
+            <a href="https://github.com/Islem-Boulahioune" target="_blank" rel="noopener noreferrer">
                 Visit My GitHub
-            </a>
+            </a><button type="button">Contact Me</button>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Islem , All right reserved</p>
+        <p>&copy; 2026 Islem , All rights reserved</p>
     </footer>
 </body>
 

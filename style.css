@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(190, 190, 190);
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+h1{
+    color: #2563eb;
+    text-align: center;
+    font-size: 40px;
+}
+section{
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 15px;
+}
+/* li{
+    margin-bottom: 10px;
+} */
+.skills-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none; /* to delete the point before item in list*/
+}
+.skills-container li{
+    background-color: #2563eb;
+    color: white; 
+    padding: 15px 25px;
+    border-radius: 8px;
+   /*list-style: none;  to delete the point before every item */
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));/* auto respnsive with-out media query*/
+    gap: 15px;
+}
+.project-card{
+    background-color: #e5e7eb;
+    padding: 15px;
+    border-radius: 10px;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+button{
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease,
+         transform 0.2s ease;
+}
+button:hover{
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+button:focus-visible,a:focus-visible{
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+@media (max-width: 600px ){
+    /* mobile style */
+    body{
+        padding: 15px;
+    }
+    h1{
+        font-size: 28px;
+    }
+    section{
+        padding: 15px;
+        margin: 15px auto;
+    }
+    .skills-container{
+        justify-content: center;
+        gap: 12px;
+    }
+    .skills-container li{
+        padding: 12px 18px;
+    }
+}
